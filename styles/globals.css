@@ -1,9 +1,18 @@
+:root {
+  --bg: rgb(29, 30, 32);
+  --prim: rgb(218, 218, 219);
+  --sec: rgb(155, 156, 157);
+  --entry: rgb(46, 46, 51);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--bg);
+  color: var(--prim);
 }
 
 a {
