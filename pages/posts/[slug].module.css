@@ -1,0 +1,15 @@
+.content {
+  max-width: 70vw;
+  margin: 2em auto;
+}
+.title {
+  margin: 2em 0;
+}
+
+.title * {
+  margin: 0 auto;
+}
+
+.title h1 {
+  margin-bottom: 5px;
+}
