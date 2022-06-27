@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./MovieCard.module.css";
 
@@ -31,11 +30,11 @@ type MovieCardProps = {
 const MovieCard = (props: MovieCardProps) => (
   <Link href={props.uri}>
     <section>
-      <Image
+      <img
         src={props.film.image.large}
         alt={props.film.title}
-        width={150}
-        height={225}
+        width="150"
+        height="225"
       />
       <div className={styles.info}>
         <p>
