@@ -24,7 +24,7 @@ export default function (props: { posts: PostInfo[] }) {
         {props.posts
           .sort((a, b) => (new Date(b.date) as any) - (new Date(a.date) as any))
           .map((p) => (
-            <PostCard {...p} />
+            <PostCard key={p.slug} {...p} />
           ))}
       </main>
       <Footer />
