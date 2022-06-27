@@ -17,7 +17,7 @@ export default function Slug({ data, parsed }: Props) {
       <Head>
         <title>{data.title} - Sharan</title>
       </Head>
-      <Layout>
+      <Layout current="posts">
         <article className={styles.content}>
           <header className={styles.title}>
             <h1 className={styles.title}>{data.title}</h1>

@@ -18,7 +18,7 @@ export default function PostsIndex(props: { posts: PostInfo[] }) {
       <Head>
         <title>Posts</title>
       </Head>
-      <Layout>
+      <Layout current="posts">
         <article className={styles.list}>
           {props.posts
             .sort(

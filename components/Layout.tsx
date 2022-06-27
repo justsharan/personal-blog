@@ -2,14 +2,24 @@ import { PropsWithChildren } from "react";
 import Link from "next/link";
 import styles from "./Layout.module.css";
 
-const Layout = (props: PropsWithChildren<{ noFooter?: boolean }>) => (
+type LayoutProps = {
+  noFooter?: boolean;
+  current?: "posts" | "movies";
+};
+
+const Layout = (props: PropsWithChildren<LayoutProps>) => (
   <>
     <nav className={styles.navbar}>
       <span className={styles.title}>
         <Link href="/">Sharan</Link>
       </span>
       <div className={styles.links}>
-        <Link href="/posts">Posts</Link>
+        <Link href="/posts">
+          {props.current === "posts" ? <strong>Posts</strong> : "Posts"}
+        </Link>
+        <Link href="/movies">
+          {props.current === "movies" ? <strong>Movies</strong> : "Movies"}
+        </Link>
         <Link href="mailto:sharansr@pm.me">Contact</Link>
       </div>
     </nav>
