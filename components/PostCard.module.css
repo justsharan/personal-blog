@@ -1,0 +1,32 @@
+.card {
+  background-color: var(--entry);
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.card * {
+  margin: 0;
+}
+
+.title {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.summary {
+  color: var(--sec);
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: 100vw;
+    border-radius: 0;
+  }
+}

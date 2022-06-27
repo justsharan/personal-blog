@@ -4,6 +4,7 @@ import Footer from "components/Footer";
 import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
 import PostCard from "components/PostCard";
+import styles from "./index.module.css";
 
 type PostInfo = {
   title: string;
@@ -19,10 +20,12 @@ export default function (props: { posts: PostInfo[] }) {
         <title>Posts</title>
       </Head>
       <Navbar />
-      <main>
-        {props.posts.map((p) => (
-          <PostCard {...p} />
-        ))}
+      <main className={styles.list}>
+        {props.posts
+          .sort((a, b) => (new Date(a.date) as any) - (new Date(b.date) as any))
+          .map((p) => (
+            <PostCard {...p} />
+          ))}
       </main>
       <Footer />
     </>
