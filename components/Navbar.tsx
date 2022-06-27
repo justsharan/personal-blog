@@ -9,7 +9,7 @@ export default () => (
 
     <div className={styles.links}>
       <Link href="/posts">Posts</Link>
-      <Link href="/movies">Movies</Link>
+      {/* <Link href="/movies">Movies</Link> */}
       <Link href="mailto:sharansr@pm.me">Contact</Link>
     </div>
   </nav>

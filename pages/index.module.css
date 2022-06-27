@@ -1,0 +1,24 @@
+.content {
+  max-width: 60vw;
+  margin: 30vh auto;
+}
+
+.content h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.content p {
+  color: var(--sec);
+  margin-bottom: 2em;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5em;
+}
+
+.socials svg {
+  fill: var(--prim);
+  height: 1.5em;
+}
