@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 
-export default () => (
+const Navbar = () => (
   <nav className={styles.navbar}>
     <span className={styles.title}>
       <Link href="/">Sharan</Link>
@@ -14,3 +14,5 @@ export default () => (
     </div>
   </nav>
 );
+
+export default Navbar;

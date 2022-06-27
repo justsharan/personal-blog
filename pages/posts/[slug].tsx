@@ -12,7 +12,7 @@ type Props = {
   parsed: string;
 };
 
-export default function ({ data, parsed }: Props) {
+export default function Slug({ data, parsed }: Props) {
   return (
     <>
       <Head>

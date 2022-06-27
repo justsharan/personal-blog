@@ -8,7 +8,7 @@ type Props = {
   slug: string;
 };
 
-export default (props: Props) => (
+const PostCard = (props: Props) => (
   <Link href={`/posts/${props.slug}`}>
     <article className={styles.card}>
       <p className={styles.title}>{props.title}</p>
@@ -26,3 +26,5 @@ export default (props: Props) => (
     </article>
   </Link>
 );
+
+export default PostCard;

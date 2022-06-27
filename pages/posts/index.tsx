@@ -13,7 +13,7 @@ type PostInfo = {
   slug: string;
 };
 
-export default function (props: { posts: PostInfo[] }) {
+export default function PostsIndex(props: { posts: PostInfo[] }) {
   return (
     <>
       <Head>

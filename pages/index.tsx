@@ -11,11 +11,11 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className={styles.content}>
-        <h1>Hey there, I'm Sharan.</h1>
+        <h1>Hey there, I&apos;m Sharan.</h1>
         <p>
-          I'm a third-year undergraduate student at the University of British
-          Columbia studying Microbiology. In my spare time, I enjoy biking,
-          cooking, going on hikes, and pretty much everything else.
+          I&apos;m a third-year undergraduate student at the University of
+          British Columbia studying Microbiology. In my spare time, I enjoy
+          biking, cooking, going on hikes, and pretty much everything else.
         </p>
         <div className={styles.socials}>
           <Link href="https://github.com/justsharan">
