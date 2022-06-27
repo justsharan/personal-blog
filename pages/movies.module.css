@@ -1,0 +1,32 @@
+.list {
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 150px);
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 1em;
+}
+
+.title svg {
+  width: 1.5em;
+  height: auto;
+  vertical-align: middle;
+}
