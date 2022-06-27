@@ -4,13 +4,14 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from "./movies.module.css";
 
+const API = "https://lboxd.vercel.app/api/lbox?user=justsharan";
 const FIRST_DAY_OF_YEAR = Number(new Date(new Date().getFullYear(), 0, 1));
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);
 
   const fetchData = async () => {
-    const res = await fetch("/api/letterboxd");
+    const res = await fetch(API);
     const body = await res.json();
     setMovies(body);
   };
