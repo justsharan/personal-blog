@@ -1,6 +1,7 @@
 .content {
   max-width: 60vw;
   margin: 30vh auto;
+  animation: fadeIn 0.5s;
 }
 
 .content h1 {
@@ -21,4 +22,13 @@
 .socials svg {
   fill: var(--prim);
   height: 1.5em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
