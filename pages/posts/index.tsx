@@ -22,7 +22,7 @@ export default function (props: { posts: PostInfo[] }) {
       <Navbar />
       <main className={styles.list}>
         {props.posts
-          .sort((a, b) => (new Date(a.date) as any) - (new Date(b.date) as any))
+          .sort((a, b) => (new Date(b.date) as any) - (new Date(a.date) as any))
           .map((p) => (
             <PostCard {...p} />
           ))}
@@ -35,6 +35,7 @@ export default function (props: { posts: PostInfo[] }) {
 export async function getStaticProps() {
   const posts: PostInfo[] = [];
   for (const file of await readdir("posts")) {
+    if (!file.endsWith(".md")) continue;
     const { data } = matter(await readFile(`posts/${file}`, "utf-8"));
     posts.push({
       slug: file.slice(0, -3),
