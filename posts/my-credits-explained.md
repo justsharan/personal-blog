@@ -10,7 +10,7 @@ This is just an article laying out all of my first-year credits and how much mon
 
 This is my AP score report, showing each AP exam I've taken and the score I obtained on them. I've annotated each exam with the course corresponding credits I get at UBC. If you're unaware, AP exams are graded on a scale of 1-5, and UBC provides credit for AP scores of 4 or 5. You can check which specific courses you can get credit for [at this page](https://you.ubc.ca/applying-ubc/applied/first-year-credit-ok/).
 
-{{< figure src="ap_scores.png" width="500px" >}}
+![My AP scores](/ap_scores.png)
 
 What can I do with all of this? Having credit for a course means UBC basically pretends that you've taken those courses and understand the content for course registration purposes. This means that you can directly register for courses that require those as a prerequisite (ex: I took BIOL 205 my first year, since I have credit for BIOL 125, which is its prerequisite).
 

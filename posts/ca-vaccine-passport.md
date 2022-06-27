@@ -14,11 +14,11 @@ For this, make sure you're on **iOS 15.1 or later**.
 
 Now, for the main part. Open up your proof of vaccination on a separate device (whether it be the federal PDF or BC's image) and scan the code using your iPhone. Like it shows in the screenshot below, it should open in the Health app.
 
-{{< figure src="vaccine_card.PNG" width="200px" >}}
+![Vaccine card](/vaccine_card.PNG)
 
 Once you accept and click **Done**, you can access it the same way you do with Apple Pay. Double tap the power button and no matter whether your phone is turned off or in a different app, your vaccine card will pull up automatically.
 
-{{< figure src="result.PNG" width="400px" >}}
+![Result after adding to Health](/result.PNG)
 
 The QR code might look really small on wallet, but I tried to verify it as though I'm a business using both [BC Vaccine Card Verifier](https://apps.apple.com/ca/app/bc-vaccine-card-verifier/id1583114791) and [Verify Ontario](https://apps.apple.com/ca/app/verify-ontario/id1584425317) (those are the apps that businesses use to verify your QR code), and both apps easily picked it up.
 
@@ -26,7 +26,7 @@ The QR code might look really small on wallet, but I tried to verify it as thoug
 
 I originally got my vaccine in the United States, and they gave me my original QR code (if you're from New Jersey like me, you can get it from [Docket](https://apps.apple.com/us/app/docket-organize-communicate/id1117444284)). It worked the same way with that, too:
 
-{{< figure src="result_nj.jpg" width="400px" >}}
+![After adding NJ caccine card to Health](/result_nj.jpg)
 
 Notice that the issuing authority says "State of New Jersey", not PHSA.
 
@@ -38,7 +38,7 @@ If you're an international student in Canada (like me), you'll first need to sub
 
 2. Input your Personal Health Number (PHN). This will be on the back of your BC Services Card. If you don't have a PHN yet, call [+1-833-838-2323](tel:+1-833-838-2323) and they can create one for you.
 
-{{< figure src="bcservicescardback.png" width="300px" >}}
+![Back of BC Services Card](/bcservicescardback.png)
 
 3. Upload your proof of vaccination, and then click **Next** and fill out all the details. Once you're done, submit the form.
 
