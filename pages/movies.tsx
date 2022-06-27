@@ -113,7 +113,7 @@ export default function Movies() {
         </h1>
         <article className={styles.list}>
           {movies
-            .filter((m) => m.date.watched > FIRST_DAY_OF_YEAR)
+            .filter((m, i) => m.date.watched > FIRST_DAY_OF_YEAR && i < 30)
             .sort((a, b) => b.date.watched - a.date.watched)
             .map((m, i) => (
               <MovieCard key={i} {...m} />
