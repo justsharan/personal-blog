@@ -9,3 +9,7 @@
   margin: 0;
   font-size: 12px;
 }
+
+.img {
+  border-radius: 5px;
+}

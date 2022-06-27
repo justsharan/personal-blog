@@ -31,6 +31,7 @@ const MovieCard = (props: MovieCardProps) => (
   <Link href={props.uri}>
     <section>
       <img
+        className={styles.img}
         src={props.film.image.large}
         alt={props.film.title}
         width="150"
