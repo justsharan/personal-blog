@@ -1,14 +1,14 @@
-.content {
+.hero {
   max-width: 60vw;
   margin: 30vh auto;
 }
 
-.content h1 {
+.hero h1 {
   font-size: 3em;
   margin: 0;
 }
 
-.content p {
+.hero p {
   color: var(--sec);
   margin-bottom: 2em;
 }

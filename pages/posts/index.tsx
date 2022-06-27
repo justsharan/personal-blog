@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Navbar from "components/Navbar";
-import Footer from "components/Footer";
+import Layout from "components/Layout";
 import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
 import PostCard from "components/PostCard";
@@ -19,15 +18,17 @@ export default function PostsIndex(props: { posts: PostInfo[] }) {
       <Head>
         <title>Posts</title>
       </Head>
-      <Navbar />
-      <main className={styles.list}>
-        {props.posts
-          .sort((a, b) => (new Date(b.date) as any) - (new Date(a.date) as any))
-          .map((p) => (
-            <PostCard key={p.slug} {...p} />
-          ))}
-      </main>
-      <Footer />
+      <Layout>
+        <article className={styles.list}>
+          {props.posts
+            .sort(
+              (a, b) => (new Date(b.date) as any) - (new Date(a.date) as any)
+            )
+            .map((p) => (
+              <PostCard key={p.slug} {...p} />
+            ))}
+        </article>
+      </Layout>
     </>
   );
 }
