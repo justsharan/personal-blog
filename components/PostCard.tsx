@@ -10,7 +10,7 @@ type Props = {
 
 const PostCard = (props: Props) => (
   <Link href={`/posts/${props.slug}`}>
-    <article className={styles.card}>
+    <section className={styles.card}>
       <p className={styles.title}>{props.title}</p>
       <time
         dateTime={new Date(props.date).toISOString()}
@@ -23,7 +23,7 @@ const PostCard = (props: Props) => (
         }).format(new Date(props.date))}
       </time>
       <p className={styles.summary}>{props.description}</p>
-    </article>
+    </section>
   </Link>
 );
 
