@@ -1,5 +1,7 @@
 .content {
   animation: fadeIn 0.25s;
+  max-width: 70vw;
+  margin: 3em auto;
 }
 
 @keyframes fadeIn {
@@ -37,6 +39,9 @@
   .navbar {
     flex-direction: column;
     align-items: center;
+  }
+  .content {
+    max-width: 100vw;
   }
 }
 
