@@ -20,3 +20,10 @@
     max-width: 80vw;
   }
 }
+
+.content img {
+  max-width: 30vw;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+}
