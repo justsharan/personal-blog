@@ -26,7 +26,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => (
     <main className={styles.content}>{props.children}</main>
     {!props.noFooter && (
       <p className={styles.footer}>
-        &copy; {new Date().getFullYear()} <Link href="/">Sharan</Link>.
+        &copy; 2021-{new Date().getFullYear()} Sharan.
       </p>
     )}
   </>
