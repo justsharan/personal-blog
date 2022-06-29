@@ -31,9 +31,7 @@ Lorem ipsum dolor sit amet
 \[
   (a+b)^n
   =
-  \sum_{r=0}^n
-  \binom{n}{r}
-  a^{n-r} b^r
+  \sum_{r=0}^n \binom{n}{r} a^{n-r} b^r
 \]
 
 \end{document}
