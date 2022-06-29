@@ -22,6 +22,11 @@
   height: auto;
 }
 
+.content a {
+  text-decoration: underline;
+  margin: 0 2px;
+}
+
 @media only screen and (max-width: 600px) {
   .content {
     max-width: 80vw;
