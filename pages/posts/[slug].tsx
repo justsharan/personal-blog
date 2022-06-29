@@ -21,14 +21,13 @@ export default function Slug({ data, parsed }: Props) {
         <article className={styles.content}>
           <header className={styles.title}>
             <h1 className={styles.title}>{data.title}</h1>
-            <em>
-              Posted on{" "}
+            <p>
               {new Intl.DateTimeFormat("en-US", {
                 month: "long",
                 day: "numeric",
                 year: "numeric",
               }).format(new Date(data.date))}
-            </em>
+            </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: parsed }} />
         </article>
