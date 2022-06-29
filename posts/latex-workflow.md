@@ -26,11 +26,14 @@ This isn't meant to be a LaTeX tutorial, but this is the basic layout of a LaTeX
 
 % YOUR MAIN CONTENT HERE
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet
 
 \[
-  (a+b)^n = \sum_{r=0}^n \binom{n}{r} a^{n-r} b^r
+  (a+b)^n
+  =
+  \sum_{r=0}^n
+  \binom{n}{r}
+  a^{n-r} b^r
 \]
 
 \end{document}
