@@ -15,8 +15,7 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => (
       <title>{props.title}</title>
       <div
         dangerouslySetInnerHTML={{
-          __html:
-            '<script async defer data-website-id="8245a15f-85ef-41e8-b582-48daa5fc7fce" src="https://metrics.justsharan.xyz/umami.js"></script>',
+          __html: `<script async defer data-website-id="${process.env.WEBSITE_ID}" src="https://metrics.justsharan.xyz/umami.js"></script>`,
         }}
       ></div>
     </Head>
