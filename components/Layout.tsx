@@ -12,6 +12,12 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => (
     <nav className={styles.navbar}>
       <span className={styles.title}>
         <Link href="/">Sharan</Link>
+        <script
+          async
+          defer
+          data-website-id="8245a15f-85ef-41e8-b582-48daa5fc7fce"
+          src="https://metrics.justsharan.xyz/umami.js"
+        ></script>
       </span>
       <div className={styles.links}>
         <Link href="/posts">
