@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Layout from "components/Layout";
 import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
@@ -14,22 +13,15 @@ type PostInfo = {
 
 export default function PostsIndex(props: { posts: PostInfo[] }) {
   return (
-    <>
-      <Head>
-        <title>Posts</title>
-      </Head>
-      <Layout current="posts">
-        <article className={styles.list}>
-          {props.posts
-            .sort(
-              (a, b) => (new Date(b.date) as any) - (new Date(a.date) as any)
-            )
-            .map((p) => (
-              <PostCard key={p.slug} {...p} />
-            ))}
-        </article>
-      </Layout>
-    </>
+    <Layout title="Posts" current="posts">
+      <article className={styles.list}>
+        {props.posts
+          .sort((a, b) => (new Date(b.date) as any) - (new Date(a.date) as any))
+          .map((p) => (
+            <PostCard key={p.slug} {...p} />
+          ))}
+      </article>
+    </Layout>
   );
 }
 

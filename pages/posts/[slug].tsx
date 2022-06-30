@@ -1,5 +1,4 @@
 import { GetStaticPropsContext } from "next";
-import Head from "next/head";
 import Layout from "components/Layout";
 import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
@@ -13,26 +12,21 @@ type Props = {
 
 export default function Slug({ data, parsed }: Props) {
   return (
-    <>
-      <Head>
-        <title>{data.title} - Sharan</title>
-      </Head>
-      <Layout current="posts">
-        <article className={styles.content}>
-          <header className={styles.title}>
-            <h1 className={styles.title}>{data.title}</h1>
-            <p>
-              {new Intl.DateTimeFormat("en-US", {
-                month: "long",
-                day: "numeric",
-                year: "numeric",
-              }).format(new Date(data.date))}
-            </p>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: parsed }} />
-        </article>
-      </Layout>
-    </>
+    <Layout title={`${data.title} - Sharan`} current="posts">
+      <article className={styles.content}>
+        <header className={styles.title}>
+          <h1 className={styles.title}>{data.title}</h1>
+          <p>
+            {new Intl.DateTimeFormat("en-US", {
+              month: "long",
+              day: "numeric",
+              year: "numeric",
+            }).format(new Date(data.date))}
+          </p>
+        </header>
+        <section dangerouslySetInnerHTML={{ __html: parsed }} />
+      </article>
+    </Layout>
   );
 }
 

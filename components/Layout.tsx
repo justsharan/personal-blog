@@ -1,23 +1,28 @@
 import { PropsWithChildren } from "react";
 import Link from "next/link";
 import styles from "./Layout.module.css";
+import Head from "next/head";
 
 type LayoutProps = {
   noFooter?: boolean;
   current?: "posts" | "movies";
+  title?: string;
 };
 
 const Layout = (props: PropsWithChildren<LayoutProps>) => (
   <>
+    <Head>
+      <title>{props.title}</title>
+      <div
+        dangerouslySetInnerHTML={{
+          __html:
+            '<script async defer data-website-id="8245a15f-85ef-41e8-b582-48daa5fc7fce" src="https://metrics.justsharan.xyz/umami.js"></script>',
+        }}
+      ></div>
+    </Head>
     <nav className={styles.navbar}>
       <span className={styles.title}>
         <Link href="/">Sharan</Link>
-        <script
-          async
-          defer
-          data-website-id="8245a15f-85ef-41e8-b582-48daa5fc7fce"
-          src="https://metrics.justsharan.xyz/umami.js"
-        ></script>
       </span>
       <div className={styles.links}>
         <Link href="/posts">
